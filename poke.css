@@ -1,6 +1,23 @@
 :root {
 	--dark: rgb(28, 28, 28);
 	--light: rgb(210, 209, 209);
+	--light-hover: rgb(189, 185, 185);
+	--green: #6abf69;
+	--brown: #c99e6b;
+	--yellow: #b7bf67;
+	--pink: #c57a87;
+}
+.green {
+	background-color: var(--green);
+}
+.brown {
+	background-color: var(--brown);
+}
+.yellow {
+	background-color: var(--yellow);
+}
+.pink {
+	background-color: var(--pink);
 }
 
 body {
@@ -42,12 +59,17 @@ main {
 	flex-direction: row;
 	gap: 1em;
 	width: 13em;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: var(--light-hover);
+		cursor: pointer;
+	}
 
 	/* Nyare CSS-syntax */
 	.box {
 		width: 5em;
 		height: 5em;
-		background-color: rgb(143, 195, 143);
 	}
 	h3, p {
 		padding: 0;
